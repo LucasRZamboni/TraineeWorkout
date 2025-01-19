@@ -1,0 +1,24 @@
+#entrar img {
+  width: 250px;
+}
+#entrar .title-container .titulo {
+  font-size: 25px;
+}
+#entrar .title-container .frase {
+  font-size: 14px;
+}
+#entrar .entrar-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+#entrar .entrar-buttons #showLogin {
+  background: var(--color1);
+}
+#entrar .entrar-buttons #showLogin:hover {
+  background: var(--color1-1);
+}
+
+

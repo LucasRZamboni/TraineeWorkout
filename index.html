@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/IMG/Logo1.png" type="image/x-icon" sizes="16x16">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="assets/CSS/bootstrap/_bootswatch.scss" />
+    <link rel="stylesheet" href="assets/CSS/bootstrap/_variables.scss" />
+    <link rel="stylesheet" href="assets/CSS/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="assets/CSS/bootstrap/bootstrap.min.css" />
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="assets/CSS/reset.css" />
+    <link rel="stylesheet" href="assets/CSS/style.css" />
+    <link rel="stylesheet" href="assets/CSS/entrar.css" />
+    <link rel="stylesheet" href="assets/CSS/login.css" />
+    <link rel="stylesheet" href="assets/CSS/cadastro.css" />
+    <link rel="stylesheet" href="assets/CSS/esqueciSenha.css" />
+    <link rel="stylesheet" href="assets/CSS/media.css" />
+
+    <title>Trainee Workout</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <div class="alerta" id="mensagemAlerta">
+        </div>
+        <div id="entrar">
+          <img src="assets/IMG/Logo1.png" alt="imagem logo" />
+
+          <div class="title-container">
+            <h2 class="titulo">Bem-vindo de volta!</h2>
+
+            <p class="frase">Acesse sua conta agora mesmo.</p>
+          </div>
+
+          <div class="entrar-buttons">
+            <button class="btn btn-success showLogin">Entrar</button>
+          </div>
+        </div>
+
+        <form id="formLogin">
+          <div class="title-container">
+            <h2 class="titulo">Entre com sua conta</h2>
+
+            <p class="frase">Utilise seu email e senha cadastrado.</p>
+          </div>
+          <div class="form-group">
+            <div class="input-group mb-3">
+              <span class="input-group-text"
+                ><ion-icon name="mail-outline"></ion-icon
+              ></span>
+              <input type="email" class="form-control" id="emailLogin" />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text"
+                ><ion-icon name="lock-closed-outline"></ion-icon
+              ></span>
+              <input
+                type="password"
+                class="form-control"
+                id="passwordLogin"
+                aria-describedby="passView"
+              />
+              <button class="btn btn-light" type="button" id="passViewLogin">
+                <ion-icon name="eye-outline" id="iconeLogin"></ion-icon>
+              </button>
+            </div>
+            <button class="btn btn-link" id="showEsqueci">
+              Esqueci minha senha
+            </button>
+          </div>
+
+          <button class="btn btn-success" id="botaoLogin">Login</button>
+          <div class="form-control semCadastro">
+            <span>Não possui cadastro?</span>
+            <button class="btn btn-link" id="showCadastro">Cadastre-se!</button>
+          </div>
+        </form>
+
+        <form id="formCadastro">
+          <div class="title-container">
+            <h2 class="titulo">Crie sua conta</h2>
+
+            <p class="frase">Preencha seus dados</p>
+          </div>
+          <div class="form-group">
+            <div class="input-group mb-3">
+              <span class="input-group-text icon"
+                ><ion-icon name="person-outline"></ion-icon
+              ></span>
+              <input type="text" class="form-control" />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text icon"
+                ><ion-icon name="mail-outline"></ion-icon
+              ></span>
+              <input type="email" class="form-control" />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text icon"
+                ><ion-icon name="lock-closed-outline"></ion-icon
+              ></span>
+              <input
+                type="password"
+                class="form-control"
+                id="passwordCadastro"
+                aria-describedby="passViewCadastro"
+              />
+              <button class="btn btn-light" type="button" id="passViewCadastro">
+                <ion-icon name="eye-outline" id="iconeCadastro"></ion-icon>
+              </button>
+            </div>
+            
+          </div>
+
+          <button class="btn btn-light" id="botaoCadastro">Cadastrar</button>
+
+          <div class="form-control comCadastro">
+            <span>Já é cadastrado?</span>
+            <button class="btn btn-link showLogin" >Faça login!</button>
+          </div>
+        </form>
+
+        <form id="formEsqueci">
+          <div class="title-container">
+            <h2 class="titulo">Esqueceu a senha?</h2>
+
+            <p class="frase">Digite seu e-mail cadastrado.</p>
+          </div>
+          <div class="form-group">
+            <div class="input-group mb-3">
+              <span class="input-group-text"
+                ><ion-icon name="mail-outline"></ion-icon
+              ></span>
+              <input type="email" class="form-control" />
+            </div>
+          </div>
+
+          <button class="btn btn-dark" id="botaoEsqueci">Recuperar</button>
+        </form>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="assets/JS/showPassword.js"></script>
+    <script src="assets/JS/showLogin.js"></script>
+    <script src="assets/JS/showEsqueci.js"></script>
+    <script src="assets/JS/showCadastro.js"></script>
+    <script src="assets/JS/login.js"></script>
+  </body>
+</html>
