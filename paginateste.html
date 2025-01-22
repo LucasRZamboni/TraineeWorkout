@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+        select, button {
+            margin: 5px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h2>Monte seu Treino</h2>
+
+    <label for="tipoExercicio">Escolha o tipo de exercício:</label>
+    <select id="tipoExercicio">
+        <option value="">Opções</option>
+        <option value="semMaquina">Sem Máquina</option>
+        <option value="comMaquina">Com Máquina</option>
+        <option value="pesoLivre">Peso Livre</option>
+    </select>
+
+    <ul id="listaExercicios"></ul>
+
+    <h3>Treino</h3>
+    <label for="diaTreino">Escolha o dia:</label>
+    <select id="diaTreino">
+        <option value="segunda">Segunda-feira</option>
+        <option value="terca">Terça-feira</option>
+        <option value="quarta">Quarta-feira</option>
+        <option value="quinta">Quinta-feira</option>
+        <option value="sexta">Sexta-feira</option>
+    </select>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Dia</th>
+                <th>Exercício</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="tabelaTreino"></tbody>
+    </table>
+
+<script src="assets/JS/others/extrutura.js"></script>
+</body>
+</html>
