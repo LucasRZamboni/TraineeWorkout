@@ -1,71 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trainee Workout</title>
 
-
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
-    <link rel="stylesheet" href="css/header.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
     <div class="container">
-        <header>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">
-                            <span class="link-icon">
-                                <ion-icon name="home-outline"></ion-icon>
-                            </span>
-                            <span class="link-text">
-                                Home
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="link-icon">
-                                <ion-icon name="barbell-outline"></ion-icon>
-                            </span>
-                            <span class="link-text">
-                                Exercícios
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="link-icon">
-                                <ion-icon name="people-outline"></ion-icon>
-                            </span>
-                            <span class="link-text">
-                                Sobre
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="link-icon">
-                                <ion-icon name="log-in-outline"></ion-icon>
-                            </span>
-                            <span class="link-text">
-                                Login
-                            </span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <section>
-
-        </section>
+      <div id="alerta" class="">
+        <span class="message">
+          <ion-icon name="alert-outline"></ion-icon>
+        </span>
+        <button class="close">
+            <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+      <form id="login">
+        <div class="form-control">
+          <img src="assets/img/Logo1.png" alt="logo da pagina" />
+        </div>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <div class="form-control-input">
+            <input
+              type="email"
+              name="email"
+              id="emailLogin"
+              placeholder="Digite seu e-mail..."
+            />
+            <ion-icon name="mail-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="form-control">
+          <label for="senha">Senha</label>
+          <div class="form-control-input">
+            <input
+              type="password"
+              name="senha"
+              id="senhaLogin"
+              placeholder="Digite sua senha..."
+            />
+            <ion-icon name="lock-closed-outline" class="icon-senha"></ion-icon>
+          </div>
+          <small class="senha-frase"
+            >Nós não compartilhamos seus dados com ninguem!</small
+          >
+        </div>
+        <div class="form-control">
+          <p>Não é cadastrado? <a href="#cadastro">Cadastre-se!</a></p>
+        </div>
+      </form>
     </div>
-    
 
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>

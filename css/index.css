@@ -1,0 +1,71 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#login{
+    width: 100%;
+    height: 500px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#login .form-control{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 0;
+}
+#login .form-control img{
+    width: 100%;
+    max-width: 350px;
+}
+#login .form-control label{
+    font-size: 20px;
+    width: 80%;
+    color: var(--text-color);
+}
+
+#login .form-control .form-control-input{
+    width: 80%;
+    margin: 4px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+#login .form-control .form-control-input input{
+    width: 100%;
+    height: 40px;
+    padding: 0 0 0 10px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+#login .form-control .form-control-input ion-icon{
+    position: absolute;
+    right: -1px;
+    font-size: 20px;
+    padding: 11px;
+    background: rgb(0, 0, 0);
+    z-index: 10;
+    color: var(--text-color);
+}
+#login .form-control .form-control-input .icon-senha:hover{
+    cursor: pointer;
+}
+#login .form-control .senha-frase{
+    width: 80%;    
+    font-size: 10px;
+    color: rgb(155, 155, 155);
+}
+#login .form-control p{
+    margin-top: 25px;
+}
+#login .form-control p a{
+    text-decoration: none;
+    color: var(--text-color);
+}

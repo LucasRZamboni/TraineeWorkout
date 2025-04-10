@@ -2,6 +2,10 @@
 
 :root {
   --font-family: "Underdog", system-ui;
+  --text-color: #76b400;
+  --text-color2: rgb(233, 26, 26);
+  --error-alert: rgb(165, 6, 6);
+  --success-alert: #537e04;
 }
 * {
   padding: 0;
@@ -12,10 +16,68 @@
 body {
   width: 100%;
   min-height: 100vh;
+  background: black;
 }
 .container {
   width: 100%;
   min-height: 100vh;
-  background: black;
   padding: 20px;
 }
+#alerta {
+  position: absolute;
+  top: 60px;
+  width: 80%;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 4px;
+}
+#alerta span,
+#alerta button {
+  display: flex;
+  align-items: center;
+}
+#alerta button {
+  position: absolute;
+  right: 10px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+  color: white;
+}
+#alerta ion-icon {
+  font-size: 25px;
+  padding: 5px;
+  border-radius: 50%;
+}
+#alerta button ion-icon{
+  color: black;
+}
+#alerta span ion-icon{
+  background: black;
+}
+#alerta.success button:active{
+  background: #76b400;
+  color: black;
+  box-shadow: 0 0 2px white;
+}
+#alerta.error button:active{
+  background: var(--text-color2);
+  color: black;
+  box-shadow: 0 0 2px white;
+}
+#alerta.error {
+  background: var(--error-alert);
+  display: flex;
+  align-items: center;
+  color: var(--text-color2);
+}
+#alerta.success {
+  background: var(--success-alert);
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+}
+
